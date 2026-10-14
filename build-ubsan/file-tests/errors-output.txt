@@ -1,0 +1,4 @@
+ERROR: division by zero
+ERROR: invalid expression
+30
+ERROR: division by zero

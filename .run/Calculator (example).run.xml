@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Calculator (example)" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="examples/input.txt results.txt" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Calculator" TARGET_NAME="Calculator" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Calculator" RUN_TARGET_NAME="Calculator">
+    <method v="2">
+      <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+    </method>
+  </configuration>
+</component>

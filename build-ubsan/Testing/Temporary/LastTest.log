@@ -1,0 +1,34 @@
+Start testing: Oct 14 16:10 CEST
+----------------------------------------------------------
+1/2 Testing: arithmetic
+1/2 Test: arithmetic
+Command: "/Users/ernest.molczan/CLionProjects/Calculator/build-ubsan/calculator_tests"
+Directory: /Users/ernest.molczan/CLionProjects/Calculator/build-ubsan
+"arithmetic" start time: Oct 14 16:10 CEST
+Output:
+----------------------------------------------------------
+Arithmetic checks passed, including 10,000-digit operands
+<end of output>
+Test time =   0.73 sec
+----------------------------------------------------------
+Test Passed.
+"arithmetic" end time: Oct 14 16:10 CEST
+"arithmetic" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: file_io
+2/2 Test: file_io
+Command: "/opt/homebrew/bin/cmake" "-DCALCULATOR=/Users/ernest.molczan/CLionProjects/Calculator/build-ubsan/Calculator" "-DTEST_DIRECTORY=/Users/ernest.molczan/CLionProjects/Calculator/build-ubsan/file-tests" "-P" "/Users/ernest.molczan/CLionProjects/Calculator/tests/test_files.cmake"
+Directory: /Users/ernest.molczan/CLionProjects/Calculator/build-ubsan
+"file_io" start time: Oct 14 16:10 CEST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"file_io" end time: Oct 14 16:10 CEST
+"file_io" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 14 16:10 CEST

@@ -1,0 +1,1 @@
+/Users/ernest.molczan/CLionProjects/Calculator/build/file-tests/alias-input.txt
