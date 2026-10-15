@@ -116,6 +116,7 @@ int main(int argc, char **argv) {
         perror("Cannot open input file");
         return 1;
     }
+
     FILE *output = open_output(input, argv[2]);
     if (output == NULL) {
         fclose(input);

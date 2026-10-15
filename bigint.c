@@ -93,7 +93,7 @@ static char *add(const Number *left, const Number *right) {
             sum += right->digits[--j] - '0';
         }
         result[position] = (char)('0' + sum % 10);
-        carry = sum / 10;
+        carry = sum > 10;
     }
     result[0] = (char)('0' + carry);
     trim_zeroes(result, length + 1);
@@ -147,7 +147,7 @@ static char *multiply(const Number *left, const Number *right) {
         for (size_t j = right->length; j > 0; --j) {
             const size_t position = i + j - 1;
             const int product = (left->digits[i - 1] - '0') * (right->digits[j - 1] - '0')
-                                + (result[position] - '0') + carry;
+                                + (result[position - 1] - '0') + carry;
             result[position] = (char)('0' + product % 10);
             carry = product / 10;
         }
@@ -158,7 +158,7 @@ static char *multiply(const Number *left, const Number *right) {
 }
 
 static char *divide(const Number *left, const Number *right) {
-    if (compare(left->digits, left->length, right->digits, right->length) < 0) {
+    if (compare(left->digits, left->length, right->digits, right->length) <= 0) {
         return copy_digits("0", 1);
     }
     if (right->length > SIZE_MAX - 2) {
@@ -224,7 +224,7 @@ BigIntStatus bigint_calculate(const char *left, char operation,
         case '-':
         case '+': {
             if (operation == '-' && b.digits[0] != '0') {
-                b.negative = !b.negative;
+                b.negative = !a.negative;
             }
             if (a.negative == b.negative) {
                 digits = add(&a, &b);
