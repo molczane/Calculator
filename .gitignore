@@ -1,0 +1,11 @@
+# CMake build trees, binaries, and test output
+/build/
+/build-*/
+/cmake-build-*/
+
+# Generated calculator results
+/results.txt
+/debug-results.txt
+
+# macOS metadata
+.DS_Store

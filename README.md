@@ -12,6 +12,16 @@ limit. Their size is limited by available memory and computation time; using
 characters avoids numeric overflow, but does not remove the need for safe
 allocation, bounds checks, and cleanup.
 
+## Debugging exercise
+
+This checkout contains four intentional arithmetic defects for debugger
+practice. The existing tests describe correct behavior and are expected to
+fail until the defects are fixed.
+
+Select CLion's `Calculator (debug practice)` configuration and click Debug.
+It reads `examples/debug-input.txt` and writes `debug-results.txt` in the
+project root. Correct answers are in `examples/debug-expected.txt`.
+
 ## Input and output
 
 The initial version operates on signed whole numbers. Division discards the
