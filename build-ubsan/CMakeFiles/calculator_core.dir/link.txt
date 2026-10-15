@@ -1,2 +1,0 @@
-/usr/bin/ar qc libcalculator_core.a CMakeFiles/calculator_core.dir/bigint.c.o CMakeFiles/calculator_core.dir/calculator.c.o
-/usr/bin/ranlib libcalculator_core.a

@@ -1,1 +1,0 @@
-/usr/bin/cc -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/calculator_tests.dir/tests/test_calculator.c.o -o calculator_tests  libcalculator_core.a
